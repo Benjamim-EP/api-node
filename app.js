@@ -3,6 +3,14 @@ const app = express();
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 
+app.use((req, res, next) => {
+    res.status(200).send({
+        mensagem: 'OK, Deu certo'
+    });
+});
+
+module.exports = app;
+/*
 const rotaProdutos = require('./routes/produtos');
 const rotaPedidos = require('./routes/pedidos');
 
@@ -43,5 +51,5 @@ app.use((error, req, res, next) => {
         }
     });
 });
-
+*/
 module.exports = app;
