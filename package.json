@@ -2,12 +2,12 @@
   "name": "api_node",
   "version": "1.0.0",
   "description": "Api ultilizando node.js ",
-  "main": "server.js",
+  "main": "index.js",
   "engines": {"node": "18.x"},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "build": "node server.js"
+    "start": "node ./api/index.js",
+    "build": "node ./api/index.js"
   },
   "author": "Benjamim Alves",
   "license": "ISC",
